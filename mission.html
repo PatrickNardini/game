@@ -11,17 +11,58 @@
                 <li> <a href="glossary.html">Glossary</a> </li>
               </ul>
         </nav>
-      <h1>👋 Hello World!</h1>
+      <h1> The Mission</h1>
             <p>
-            In the body section is where you’ll write all of your 
-            HTML and/or copy-paste it from your codepen.io drafts
+            In the ESUMS cafeteria you are required to take a fruit or vegetables. Many of the fruits and vegetables go to waste since most kids don't take them of their own accord. In "The Food Fix" the player makes sure that food does not go to waste. This shows how making the right choices leads to only good outcomes.
             </p> <head>
+  <iframe width="500" height="440" frameborder="0" src="https://ncase.me/loopy/v1.1/?embed=1&data=[[[2,1187,346,1,%22food%2520waste%22,5],[3,1523,364,0.5,%22trash%22,0],[5,1520,619,0.5,%22environment%22,0],[6,1195,626,0.5,%22money%22,0]],[[2,3,-6,1,0],[3,5,-24,-1,0],[5,6,-13,1,0],[6,2,13,1,0]],[],20%5D"></iframe>
+  <p>By decreasing the food waste you can see the trash and food waste will go down while the environmennt will get better and money will increase.  </p>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Insert Your Name Here">
-        <title>Insert Title for this Page Here</title>
+        <title>The Mission</title>
         <link rel="stylesheet" href="style.css">
       </head>
+  <h2>Game Theory Analysis of "The Food Fix"</h2>
+<table>
+  <!--
+    "tr" is the tag for "table row", "th" is "table header", and
+    "td" is "table data"
+  -->
+	<tr> 
+		<th colspan="2" rowspan="2"><!--intentionally empty--></th>
+		<th colspan="2">Player 2</th> 
+    <!--
+      "colspan" is an attribute for setting a table cell to
+      occupy multiple horizontal spaces
+      "rowspan" does the same for vertical spaces
+    -->
+	</tr>
+	<tr>
+    <!--
+      Replace the generic "Choice 1", Outcome 1", etc. with the
+      actual choices and outcomes for your social issue
+    -->
+		<td class="choice">Sort Right</td>
+		<td class="choice">Sort Wrong</td>
+    <!--
+      By using classes here, we can later add CSS to style all 
+      the "choices" to look the same
+    -->
+	</tr>
+	<tr>
+		<th rowspan="2">Player 1</th>
+		<td class="choice">Sort Right</td>
+		<td class="outcome">+1 +1</td>
+		<td class="outcome">-1 +1</td>
+	</tr>
+	<tr>
+		<td class="choice">Sort Wrong</td>
+		<td class="outcome">+1 -1</td>
+		<td class="outcome">-1 -1</td>
+	</tr>
+</table>
+
     <body>
     </body>
 </html>
